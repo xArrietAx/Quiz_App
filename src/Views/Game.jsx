@@ -5,7 +5,7 @@ import { useFetch } from "../hooks/useFetch";
 import { Quiz } from "../Components/GameComponents/Quiz";
 import Spinner from "../Components/Spinner";
 
-export const Game = () => {
+const Game = () => {
   
   const { currentQuestion } = useContext(Context);
 
@@ -31,3 +31,5 @@ export const Game = () => {
 
   return Data !== null && <Quiz Data={Data} />;
 };
+
+export default Game

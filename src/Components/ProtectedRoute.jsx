@@ -2,7 +2,7 @@ import { useEffect, useContext } from "react";
 import { Context } from "../Context/Context";
 import { useNavigate, useLocation } from "react-router-dom";
 
-export const ProtectedRoute = ({ children }) => {
+const ProtectedRoute = ({ children }) => {
   const navigate = useNavigate();
   const Location = useLocation();
 
@@ -17,3 +17,6 @@ export const ProtectedRoute = ({ children }) => {
 
   return children;
 };
+
+
+export default ProtectedRoute

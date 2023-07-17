@@ -1,12 +1,12 @@
 import { useContext } from "react";
 import { Context } from "../Context/Context";
 import { HStack, VStack, Text, Button } from "@chakra-ui/react";
-import { CircularProgress } from "../Components/CircularProgress";
+import { CircularProgress } from "../Components/Progress";
 import Spinner from "../Components/Spinner";
 import { IncorrectsAnswers } from "../Components/ResultsComponents/IncorrectsAnswers";
 import { Link } from "react-router-dom";
 
-export const Results = () => {
+const Results = () => {
   const { Results } = useContext(Context);
   return (
     <>
@@ -97,3 +97,5 @@ export const Results = () => {
     </>
   );
 };
+
+export default Results

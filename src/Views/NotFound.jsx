@@ -1,7 +1,7 @@
 import {VStack, Text, Button, Box} from '@chakra-ui/react'
 import { Link } from "react-router-dom";
 
-export const NotFound = () => {
+const NotFound = () => {
   return (
     <VStack alignItems={"center"} justifyContent={"center"} gap={5} w={"full"} h={340} textAlign={"center"} >
        <Box>
@@ -19,3 +19,5 @@ export const NotFound = () => {
       </VStack>
   )
 }
+
+export default NotFound
