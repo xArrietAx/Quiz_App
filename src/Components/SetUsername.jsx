@@ -14,7 +14,7 @@ export const Username = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
    if (!/^(?![ ])(?!.*[ ]$)(?!.*[<>]).+$/.test(Username)) {
-    return setError("Put a valid name")
+    return setError("Put a valid username")
    } else {
     localStorage.setItem("Username", Username);
     navigate("/Game")
